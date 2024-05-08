@@ -9,9 +9,10 @@ public class DemoPrimitives{
         int z = 2;
         int a = 6;
         int b = 3;
-        int total = a + b * x - z * a;
+        int total = a + b;
+        int t = (double)5/2;
         System.out.println(total);
-
+        System.out.println(t);
         // +-*/
         int c = total - 10 + x;
         System.out.println(c);
