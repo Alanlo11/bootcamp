@@ -7,7 +7,7 @@ public class A {
             else{System.out.println("Max="+b);}
 
         int c = -1100;
-        int d = -100;
+        int d = -10000;
         int e = -77100;
             if(c<d)
             {System.out.println("Min="+c);}
@@ -15,7 +15,7 @@ public class A {
             if(d<c)
             {System.out.println("Min="+d);}
             else
-            if(e<d);
+            if(e<d)
             {System.out.println("Min="+e);}
     } 
 }
