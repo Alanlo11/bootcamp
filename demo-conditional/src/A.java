@@ -9,13 +9,20 @@ public class A {
         int c = -1100;
         int d = -10000;
         int e = -77100;
-            if(c<d)
+        int f = -93939;
+        int g = 1000;
+            if(c<d&&c<e&&c<f&&c<g)
             {System.out.println("Min="+c);}
             else
-            if(d<c)
+            if(d<e&&d<f&&d<g)
             {System.out.println("Min="+d);}
             else
-            if(e<d)
+            if(e<f&&e<g)
             {System.out.println("Min="+e);}
+            else
+            if(f<g)
+            {System.out.println("Min="+f);}
+            else
+            {System.out.println("Min="+g);}
     } 
 }
