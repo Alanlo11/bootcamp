@@ -17,7 +17,7 @@ public class Demoif {
 
         //print max=10
 
-        if (a==10) {
+        if (a!=10) {
             System.out.println("=10");
         }else{
             System.out.println("a<10");

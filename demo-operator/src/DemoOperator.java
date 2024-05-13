@@ -75,7 +75,7 @@ public class DemoOperator {
 
         int r13 =30;//30
         r13 +=1;
-        System.out.println(r13);
+        System.out.println("r13="+r13);
         
 
     }
