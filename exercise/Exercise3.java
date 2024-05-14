@@ -2,7 +2,7 @@ package exercise;
 import java.text.BreakIterator;
 import java.util.Scanner;
 
-public class Excercise3 {
+public class Exercise3 {
     public static void main(String[] args) {
           /**
            * Expected Output:
