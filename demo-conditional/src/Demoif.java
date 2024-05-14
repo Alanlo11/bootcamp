@@ -12,16 +12,18 @@ public class Demoif {
             System.out.println("y<2");
         }
 
-        int a=10;
+        int a=11;
         int b=7;
 
         //print max=10
-
-        if (a!=10) {
-            System.out.println("=10");
+        a = 10;
+        
+        if (a==10) {
+            System.out.println("a=10");
         }else{
-            System.out.println("a<10");
+            System.out.println("a!=10");
         }
+
+
     }
-    
 }

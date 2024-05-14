@@ -24,22 +24,22 @@ public class DemoOperator {
         y--;//3-1
         --y;//2-1
         y-=1;//1-1
-        System.out.print(y);
+        System.out.println("y="+y);
 
         //*= 
         int p =4;
         p = p * 2;//8
         p *=2;//16
         p /=4;
-        System.out.print(p);//4
+        System.out.println(p);//4
         // /=
         int z = 10;
         z = z%3;
         int j = 10;
         j %=3; //1
-        System.out.print("z="+z+",j="+j);
+        System.out.println("z="+z+",j="+j);
 
-         String s = "hello";
+        String s = "hello";
         s = s +"world";
         s+="!!!";
         System.out.println("s="+s);
@@ -62,7 +62,7 @@ public class DemoOperator {
         boolean r7 = 10>3 || 20>=20; // true + true =true
         boolean r8 = 10>3 || 20<18; //true or false = true
         boolean r9 = 3>10 || 20<18; //false or false = false
-        System.out.println(r8);
+        System.out.println("r8="+r8);
 
         char c10 = 'a';
         char c11 = 'B';
@@ -76,6 +76,21 @@ public class DemoOperator {
         int r13 =30;//30
         r13 +=1;
         System.out.println("r13="+r13);
+
+
+        int n =3;
+        int result11 = n++ * 3 + n++;//n * 3 first,....result = 9,之後先n = n + 1,如果之後冇野,就呢到完
+        System.out.println("n="+ result11);//9+4=13
+
+        int m=4;
+        int result22 = ++m * 5;//m = m+1 first,* 5..25
+        System.out.println("m="+result22);
+        
+
+        int k =4;
+        int result33 = k++ * 7 * ++k;// (4 * 7) * 6 //168
+        System.out.println(result33);
+
         
 
     }

@@ -24,5 +24,23 @@ public class A {
             {System.out.println("Min="+f);}
             else
             {System.out.println("Min="+g);}
+
+         int h = 15;
+         int i = 18;
+         int p = 14;
+            if(p>i||p>h)
+            {System.out.println(p);}
+            else
+            {System.out.println(i);}
+        
+        boolean b1 = i>h&&i>p;
+        System.out.println(b1);
+
+        String s1 = "hello";
+        String s2 = "hello";
+            if(s1.length()>=5)
+            System.out.println("1");
+            if(s1.equals(s2))
+            System.out.println("2");
     } 
 }

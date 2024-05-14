@@ -57,6 +57,7 @@ public class DemoPrimitives{
     char c2 = ' ';
     //char c3 = '@';char variabel must contain a single character
     //char c4 = 'aa';
+    System.out.println("c2="+c2);
 
     // Primitive boolean  -> true,false唔可以有符號/其他野
     // boolean b1 = ; //
@@ -91,12 +92,12 @@ public class DemoPrimitives{
     //local variable (within the main program,you can only declare the same variable once)
     double d12;//varible declaration
     d12 = 10.9;//value assignment
-    double d13 = 14.3;//declaration and assignment
+    double d13 = 100.3;//declaration and assignment
     //byte y4 = 128;compile error (java can identify the syntax error)
 
     d13 = 19.0;//reassignment
     //double d13 = 19.0;//you cannot re-declare the same variable
-
+    System.out.println(d13);
 
 
     }
