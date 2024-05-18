@@ -16,11 +16,10 @@ public class Exercise5 {
         
             // Use a loop to count the target of character in a String.
             // code here ...
-            int i=0;
-            int j = 0;
-        for(i=0 ; i< str.length() ; i++) {
+            int j =0;
+        for(int i=0 ; i< str.length() ; i++) {
             if(str.charAt(i) != target)
-            {continue;}
+            continue;
             j += 1;}
             if(j>0)
             System.out.println("We found "+j+" character c in the String");
@@ -32,3 +31,4 @@ public class Exercise5 {
         
           }
         }
+      
