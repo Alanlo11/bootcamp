@@ -78,6 +78,10 @@ public class Demostring {
         System.out.println("5="+s3.charAt(4));
         System.out.println("last character = " + s3.charAt(s3.length()-1));
 
+
+
+
+
         String x2 = "hello world";//char use ==,can not use equal
         if(x2.charAt(x2.length()-1) == 'd' && x2.length() == 11  )  
         {System.out.println("yes");}
@@ -86,7 +90,8 @@ public class Demostring {
 
         //equal only use for string
 
-        //tool4 substring(int beginindex,int endindex)
+
+        //tool4 substring(int beginindex,int endindex)window jsdd
 
         String result = x2.substring(0,2);
         System.out.println(result);
@@ -106,6 +111,6 @@ public class Demostring {
         if (x3.charAt(0) == 'w'&& x3.charAt(1) == 'e' && x3.charAt(2)=='l')
         System.out.println("come");
 
-
+        
 }
 }

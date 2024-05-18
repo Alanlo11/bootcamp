@@ -42,5 +42,20 @@ public class A {
             System.out.println("1");
             if(s1.equals(s2))
             System.out.println("2");
+
+
+            int aa = 10;
+            int bb = 11;
+            int cc = 12;
+        
+            if(aa==10)
+            if(bb==11)
+            {System.out.println("aabb");}
+            if(cc==12)
+            {System.out.println("aacc");}
+             System.out.println(aa++ * 1 );
+
+
+
     } 
 }

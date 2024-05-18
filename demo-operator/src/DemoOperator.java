@@ -88,8 +88,8 @@ public class DemoOperator {
         
 
         int k =4;
-        int result33 = k++ * 7 * ++k;// (4 * 7) * 6 //168
-        System.out.println(result33);
+        int result33 = k++ * 7 * ++k;// (4 * 7) * 6(++ 4 ++ =6) //168
+        System.out.println("r33="+ result33);
 
         
 
