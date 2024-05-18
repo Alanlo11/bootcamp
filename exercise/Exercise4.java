@@ -23,7 +23,7 @@ public class Exercise4 {
             // 2. Divisible by 3
             // 3. > 0
             for (int i = 0; i < 100; i++) { // You cannot change this line
-            if(i != 0 && i%6 == 0 && i<=60)
+            if(i > 0 && i%3 == 0 && i<=60 && i%2 ==0)
             System.out.println(i);
             }
             }
