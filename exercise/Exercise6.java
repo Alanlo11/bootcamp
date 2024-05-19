@@ -18,9 +18,9 @@ public class Exercise6 {
     System.out.println(n2);
     for (int i=2 ; i<15 ; i++){
       n3=n1+n2;
-      System.out.println(n3);
       n1=n2;
       n2=n3;
+      System.out.println(n3);
     }
   }
 }

@@ -31,6 +31,11 @@ System.out.println("i="+i+",j="+j);
     //1,3,5,7,9
     //12,14,16,18,20
 
+    for (int i=0 ; i<21 ; i++){
+        if(i<10 && i%2 !=0 || i>10 &&i<=20 && i%2==0)
+        System.out.println("i==="+i);
+    }
+
 
     //searching
     //Find the index of first character 'a'
