@@ -22,7 +22,7 @@ for(int i=0; i<4 ; i++){
         if(j%2!=0)
         continue;
 
-System.out.println("i="+i+",j="+j);
+System.out.println("i2="+i+",j2="+j);
     }
 }
 
@@ -37,20 +37,29 @@ System.out.println("i="+i+",j="+j);
     }
 
 
+    for (int i=0 ; i<21 ; i++){
+        if (i<10 && i%2 ==0){
+            continue;
+        }
+        if (i>10 && i<21 && i%2 !=0){
+            continue;
+        }
+        System.out.println("i555+" + i);
+    }
+
+
     //searching
     //Find the index of first character 'a'
     //14
 
-    
+
+
 String s = "Vincent Book Game Laptop";
-for(int i=0;i<s.length();i++){
-if((s.charAt(i))=='a')
-break;
-i += i ;
-System.out.println("i="+i);
+for(int i=0 ; i<s.length() ; i++) {
+if(s.charAt(i)=='a'){
+System.out.println("ii="+i);
+break;}
 }
 
-
-
-    }
+ }
 }

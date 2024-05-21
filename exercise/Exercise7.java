@@ -12,9 +12,6 @@ public class Exercise7 {
         
             // Write a loop to sum up all value in the int array
             // code here ...
-            for(int i=0 ; i<11 ; i++){
-              sum = sum+i;
-            }
-            System.out.println("The sum is " + sum);
+          
           }
         }
