@@ -66,7 +66,6 @@ public class Demoarray {
         System.out.println("min="+min);
 
 
-
         //num of e
         //boolean if 'r' exists
         //String result to store "qreel"
@@ -102,10 +101,57 @@ public class Demoarray {
         char[] c1 = new char[]{'o','a','k','p'};
         char[] c2 = new char[]{'a','b','f','t'};
         
+        String a1 = "";
+        for(int i=0 ; i<c1.length ; i++){
+            a1 += c1[i];
+        }
+        for (int i=0 ; i<c2.length ; i++){
+            a1 +=c2[i];
+        }
+        System.out.println("4a="+a1);
         
+
+
+        String a2 = "";
+        int ii = c1.length > c2.length ? c1.length : c2.length;
+        for(int i=0 ; i<ii ; i++){
+            if (i%2==0) {
+                a2 += c1[i];
+            }else{
+                a2 += c2[i];
+            }
+        }
+        System.out.println("4b="+a2);
         
-     
+        // pt
+        String a3 = "";
+        for(int i=0 ; i<c1.length ; i++){
+            if(i>0 && i%3 ==0)
+                a3 += c1[i];
+        }
+        for(int j=0 ; j<c1.length ; j++){
+        if(j>0 && j%3 ==0)
+                a3 += c2[j];
+        }
+        System.out.println("a3="+ a3);
+
+
+        //obkta
+        char[] c3 = new char[]{'o','a','k','p','a','b'};
+        char[] c4 = new char[]{'a','b','f','t'};
+        String a4 = "";
+        int ii3 = c3.length > c4.length ? c3.length : c4.length;
+        for(int i=0 ; i<ii3 ; i++){
+            if (i%2==0 && i<c3.length) {
+                a4 += c3[i];
+            }else if (i%2 !=0 && i<c4.length) {
+                a4 += c4[i];
+                }
+            }
         
+        System.out.println("4bb="+a4);
+
+
     }
 
 }
