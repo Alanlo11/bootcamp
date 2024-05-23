@@ -152,6 +152,23 @@ public class Demoarray {
         System.out.println("4bb="+a4);
 
 
+        char[] c5 = new char[]{'a','b','c','d','e','f','g','h'};
+        char[] c6 = new char[]{'c','d','e'};
+        char[] c7 = new char[]{'z','x','c','v','b','n','m','a','s','d'};
+        String a5 = "";
+        int i20 = 0;
+        if(c3.length>c6.length){
+            i20 = c5.length;
+        }else if(
+            c5.length>c7.length){
+                i20=c5.length;
+            }else if(
+                c6.length>c7.length){
+                    i20=c6.length;
+                }else
+                i20=c7.length;
+                System.out.println("i20="+i20);
+
     }
 
 }
