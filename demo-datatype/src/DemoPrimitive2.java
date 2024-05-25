@@ -9,7 +9,6 @@ public class DemoPrimitive2 {
 
         //byte -> short -> int -> long -> float -> double
         //char -> int (ascii) char 升級係 int
-        //
 
         double d1 = 1.8;
         double d2 = 1.8d;

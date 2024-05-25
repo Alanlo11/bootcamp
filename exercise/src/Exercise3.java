@@ -1,4 +1,3 @@
-package exercise;
 import java.text.BreakIterator;
 import java.util.Scanner;
 

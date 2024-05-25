@@ -132,6 +132,7 @@ public class Demostring {
         //isBlank()  是否咩都冇
         String x9 = "";
         System.out.println(x9.isBlank());//true
+        
         x9 = " ";
         System.out.println(x9.isBlank()); //true
         System.out.println(x9.isEmpty()); //false
@@ -156,7 +157,7 @@ public class Demostring {
         //replace("","")
         System.out.println(s10.replace("l", "x"));//hexxo
         System.out.println(s10.replace("ll", "1234"));//he1234o
-        System.out.println(s10.replace("ll", "abc"));//hello
+        System.out.println(s10.replace("ll", "abc"));//heabco
 
         //contains("") true false
         System.out.println(s10.contains("ell"));//true
@@ -167,7 +168,7 @@ public class Demostring {
         //endWith()   chrck end
         System.out.println(s10.endsWith("o"));//true
 
-        //trim() 去晒頭尾space || removing the space characters at the head/tail of the String
+        //trim() 去晒頭尾space || removing the space characters at the head and tail of the String
         String s12 = " hello,  bootcamp  !!!   ";
         System.out.println("s12="+s12.trim());
 
@@ -177,10 +178,12 @@ public class Demostring {
         int xx = 0;
         String[] strings = new String[]{"hello","abcijk","vincent","Hello","  HELLO  "};
         for(int i=0 ; i<strings.length ; i++){
-            if(strings[i].trim().toLowerCase().contains("ell")==true)
+            if(strings[i].toLowerCase().contains("ell")==true)
             xx++;
         }
             System.out.println("xx="+xx);
+
+            
 
 
 }

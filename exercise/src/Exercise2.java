@@ -1,5 +1,3 @@
-package exercise;
-
 public class Exercise2 {
     public static void main(String[] args) {
         
@@ -13,7 +11,7 @@ public class Exercise2 {
  */
 // Primitive types and operators
 int a = 10;
-    if (a == 9) {
+if (a == 9) {
       System.out.println("a is equals to 9");
     } else if (a < 9 && a >= 0) {
       System.out.println("a is between 0 and 8");

@@ -54,12 +54,12 @@ System.out.println("i2="+i+",j2="+j);
 
 
 
-String s = "Vincent Book Game Laptop";
-for(int i=0 ; i<s.length() ; i++) {
-if(s.charAt(i)=='a'){
-System.out.println("ii="+i);
-break;}
-}
+    String s = "Vincent Book Game Laptop";
+    for(int i=0 ; i<s.length() ; i++) {
+    if(s.charAt(i)=='a'){
+    System.out.println("ii="+i);
+    break;}
+    }
 
  }
 }
