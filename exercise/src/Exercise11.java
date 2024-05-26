@@ -20,11 +20,7 @@ public class Exercise11 {
  
     public static int findDelayedArrivalTime(int arrivalTime, int delayedTime) {
         // code here ...
-      int j= arrivalTime + delayedTime;
-      while (j>=24) {
-        j-=24;
-      }
-      return j;
+      return (arrivalTime+delayedTime)%24;
       }
 
       
