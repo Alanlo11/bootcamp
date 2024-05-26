@@ -25,7 +25,9 @@ int[] my_array = { 25, 14, 56, 15, 36, 56, 77, 18, 29, 49 };
     System.out.println("Original Array : " + Arrays.toString(my_array));
 
     // code here ...
-
+    for(int i=0 ; i<my_array.length ; i++){
+        
+    }
     // my_array = newArr;
     System.out.println("New Array: " + Arrays.toString(newArr));
     }

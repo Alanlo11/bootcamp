@@ -13,9 +13,19 @@ public class Exercise11 {
   int delayedArrivalTime1 = findDelayedArrivalTime(15, 5); // 20
   int delayedArrivalTime2 = findDelayedArrivalTime(23, 5); // 4
   int delayedArrivalTime3 = findDelayedArrivalTime(18, 6); // 0
+
+
+  System.out.println(delayedArrivalTime1);
     }
  
     public static int findDelayedArrivalTime(int arrivalTime, int delayedTime) {
         // code here ...
+      int j= arrivalTime + delayedTime;
+      while (j>=24) {
+        j-=24;
       }
+      return j;
+      }
+
+      
 }
