@@ -16,6 +16,8 @@ public class Exercise11 {
 
 
   System.out.println(delayedArrivalTime1);
+  System.out.println(delayedArrivalTime2);
+  System.out.println(delayedArrivalTime3);
     }
  
     public static int findDelayedArrivalTime(int arrivalTime, int delayedTime) {
