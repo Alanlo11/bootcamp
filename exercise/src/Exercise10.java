@@ -25,9 +25,13 @@ int[] my_array = { 25, 14, 56, 15, 36, 56, 77, 18, 29, 49 };
     System.out.println("Original Array : " + Arrays.toString(my_array));
 
     // code here ...
+    int newArr[] = my_array;
     for(int i=0 ; i<my_array.length ; i++){
-        
+    my_array[my_array.length-1-i] = my_array[my_array.length-2-i];
+    if (my_array[my_array.length-i-1] == my_array[indexPosition])
+        break;
     }
+    my_array[indexPosition]=newValue;
     // my_array = newArr;
     System.out.println("New Array: " + Arrays.toString(newArr));
     }
