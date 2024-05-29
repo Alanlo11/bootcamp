@@ -183,8 +183,41 @@ public class Demostring {
         }
             System.out.println("xx="+xx);
 
-            
+            //think equalIgnoreCase()
+            for(int i=0 ; i<strings.length ; i++){
+                if(strings[i].trim().equalsIgnoreCase("hello")){
+                    System.out.println(strings[i]);
+                }
+            }
 
+            String s13 = "helloll";
+            System.out.println(s13.indexOf("ll"));//2
+            System.out.println(s13.indexOf('e'));//1
+            System.out.println(s13.indexOf('l'));//2 first char of
+            System.out.println(s13.indexOf("ll", 4));
+            System.out.println(s13.indexOf("ll", 6));
+            System.out.println(s13.indexOf(101));//1,ascii 'e' ->101
+
+            System.out.println(s13.lastIndexOf("ll"));//last of occurence of the pattern
+            System.out.println(s13.indexOf('e'));
+
+            String s14 = "abc";
+            s14 += "def";
+            System.out.println(s14);
+
+            String s15 = "abc";
+            s15 = s15.concat("def");//better performance 速度上快好多!!!
+            System.out.println(s15);
+
+            String s16 = "abc";
+            String s17 = "abc";
+
+            System.out.println(s16.compareTo(s17));//0,the value of s14 = the value of s15
+            System.out.println(s16.equals(s17));//chk value
+            System.out.println(s16 == s17);//chk object  comparing the string object address
+
+            
+            
 
 }
 }

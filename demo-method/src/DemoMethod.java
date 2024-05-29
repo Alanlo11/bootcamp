@@ -16,6 +16,12 @@ public class DemoMethod {
 
         System.out.println(isSubstring("hello","lll"));
    
+        System.out.println(circleArea(3));
+
+        //double * double (problem)q
+        //BigDecimal(solution)
+        System.out.println(0.2*0.1);
+        
 
     }
     
@@ -92,6 +98,7 @@ public class DemoMethod {
     }
 
     public static double circleArea(int radius){
-        return radius*3.14;
+        return radius * radius * Math.PI;//int * int * double = double(2 * 2 * 2.0 = 8.0)
+
     }
 }

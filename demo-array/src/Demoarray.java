@@ -161,6 +161,80 @@ public class Demoarray {
         i20 = i20 > c7.length ? i20 : c7.length;
         System.out.println("i20="+i20);
 
+
+        //average
+        int [] arr5 = new int [] {4,8,3};
+        int sum2 =0 ;
+        for(int i=0 ; i<arr5.length ; i++){
+            sum2 += arr5[i];
+        }
+        sum2 = sum2/arr5.length;
+
+        System.out.println(sum2);
+
+        //swaping in array
+        int [] arr6 = new int [] {6,10,-4,15};
+        //swap -4,6 交換 -4,10,6,15
+        int arr7 = arr6[0];
+        arr6[0] = arr6[2];
+        arr6[2] = arr7;
+        System.out.println(Arrays.toString(arr6));
+
+        //-4 10 6 15
+        //move 6 to the tail of the arrays
+        //10 6 15 -4
+        int t = 0;
+        for(int i=0 ; i<arr6.length -1 ; i++){
+            t = arr6[i];
+            arr6[i] = arr6[i+1];
+            arr6[i+1] = t;
+        }
+        System.out.println(Arrays.toString(arr6));
+
+        //lv2 move the max element to the tail
+        //[6, 15, -4 , 10]
+        //10,6,-4,15
+        int tt = 0;
+        for(int i=0 ; i<arr6.length -1 ; i++){
+            if(arr6[i]>arr6[i+1]){
+                tt=arr6[i];
+                arr6[i] = arr6[i+1];
+                arr6[i+1] = tt;
+            }
+            }
+            System.out.println(Arrays.toString(arr6));
+        
+    
+
+            //lv3
+        //sorting 6,10,-4,15 -> -4,6,10,15
+        int t3=0;
+        for(int i=0 ; i<arr6.length-1 ; i++){
+            for(int j=i+1 ; j<arr6.length-1 ; j++){
+                if(arr6[i]>arr6[j]){
+                    t3=arr6[i];
+                    arr6[i]=arr6[j];
+                    arr6[j]=t3;
+                }
+            }
+        }
+        System.out.println("lv3="+Arrays.toString(arr6));
+
+
+        //swap char value
+        String str = "hello"; //swap e and o -> holle
+        char t2 =' ';
+        //for(int i=0 ; i<s10.length()-1 ; i++){
+        //    arr7[i] = s10.charAt(i);
+       // }
+        //Alternative
+        char[] arr8 = str.toCharArray();
+
+        t2 = arr8[1];
+        arr8[1] = arr8[4];
+        arr8[4]=t2;
+        str = String.valueOf(arr8);//assign a new String value to varible s
+        System.out.println(str);
     }
 
 }

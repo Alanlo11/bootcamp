@@ -78,5 +78,8 @@ public class DemoLoop {
             {continue;}//when i=4,skip "total +=i",go to "i++"
             total += i;}
          System.out.println("total="+ total);
+
+
+         
     } 
 }
