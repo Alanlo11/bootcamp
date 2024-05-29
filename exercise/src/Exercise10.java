@@ -27,10 +27,16 @@ int[] my_array = { 25, 14, 56, 15, 36, 56, 77, 18, 29, 49 };
     // code here ...
     int newArr[] = my_array;
     for(int i=0 ; i<my_array.length ; i++){
+<<<<<<< HEAD
         my_array[my_array.length-1-i] = my_array[my_array.length-2-i];
         if (my_array[my_array.length-1] == my_array[indexPosition]) {
             break;
         }
+=======
+    my_array[my_array.length-1-i] = my_array[my_array.length-2-i];
+    if (my_array[my_array.length-i-1] == my_array[indexPosition])
+        break;
+>>>>>>> c0bc3fb06489bda0b2d56dfc4a212d94ff26625b
     }
     my_array[indexPosition]=newValue;
     // my_array = newArr;
