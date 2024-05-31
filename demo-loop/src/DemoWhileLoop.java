@@ -43,9 +43,13 @@ public class DemoWhileLoop {
         //reverse number
         //54321 -> 12345
         //101 -> 101
+        int b = 54321;
+        String result = "";
+        while(b!=0) {
+            result += b%10;
+            b = b/10;
+        }
+        System.out.println(result);
         
-
-
     }
-    
 }

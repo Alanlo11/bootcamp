@@ -89,7 +89,17 @@ System.out.println("i2="+i+",j2="+j);
     //***
     //**
     //*
-    
-
+    for(int i=3 ; i>=0 ; i--){
+        for(int j=i+1 ; j<5 ; j++){
+        System.out.print("*");
+        }
+    System.out.println();
+    }
+        for(int k=0 ; k<3 ; k++){
+            for(int j=k+1 ; j<4 ; j++){
+            System.out.print("*");
+            }
+        System.out.println();
+        }
  }
 }
