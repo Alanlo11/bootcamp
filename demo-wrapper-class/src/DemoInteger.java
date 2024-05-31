@@ -10,7 +10,6 @@ public class DemoInteger {
         x2 = x2 +3;
         x2 -= 10;
 
-
         //integer is a wrapper class
         //class has method
         short s = (short) x;
@@ -24,7 +23,7 @@ public class DemoInteger {
 
         //Comparsion (>, <, >=, <=, ==, != for primitive value only)
         //for integer wrapper class camparsion,compareTo()
-        Integer x3 = 4;//autobox
+        Integer x3 = 4;//autobox 因為係wrapperclass上唔係完整指令，會自動將primitive autobox去wrapperclass
         Integer x4 = 8;
         Integer x5 = 8;
         boolean result = x4 > x3;//true (compare int value)
@@ -42,14 +41,12 @@ public class DemoInteger {
 
         //Byte,Short,Integer,Long,Double,Float
         //
-        Float f1 = 10.0f;//10.0f is a float value -> autobox ->Float volue
+        Float f1 = 10.0f;//10.0f is a float value -> autobox ->Float volue(由primitive上wrapperclass)
         Float f2 = new Float(10.0f);//create Float object,storing a float value
         long l2 = f2.longValue();
         
-
         double d3 = new Double("10.3");
     
-
         Character c1 = new Character('a');
         char c2 = Character.toUpperCase('b');//static method
         System.out.println(c2);
@@ -74,9 +71,9 @@ public class DemoInteger {
         Integer i11 = Integer.valueOf(9);//static method,the result is same as "new Integer(9)"
         Integer i12 = Integer.parseInt("10");
         int i13 = Integer.parseInt("10");
+        System.out.println("valueof"+i11);
         System.out.println(i12);
         System.out.println(i13);
-
         
         System.out.println(new Byte("10"));
         System.out.println(new Byte((byte)10));
