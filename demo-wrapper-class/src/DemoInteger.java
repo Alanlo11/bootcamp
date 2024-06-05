@@ -43,7 +43,8 @@ public class DemoInteger {
         //
         Float f1 = 10.0f;//10.0f is a float value -> autobox ->Float volue(由primitive上wrapperclass)
         Float f2 = new Float(10.0f);//create Float object,storing a float value
-        long l2 = f2.longValue();
+        long l2 = f2.longValue();//新式寫法，直接係後面加.XXXvalue
+        Float f3 = f1.floatValue();
         
         double d3 = new Double("10.3");
     
@@ -69,14 +70,17 @@ public class DemoInteger {
         int i10 =i9.intValue();
 
         Integer i11 = Integer.valueOf(9);//static method,the result is same as "new Integer(9)"
-        Integer i12 = Integer.parseInt("10");
-        int i13 = Integer.parseInt("10");
+        Integer i12 = Integer.parseInt("10");//將String轉做int，但只限數字
+        int i13 = Integer.parseInt("123");
         System.out.println("valueof"+i11);
         System.out.println(i12);
         System.out.println(i13);
         
         System.out.println(new Byte("10"));
         System.out.println(new Byte((byte)10));
+
+        Integer[] int11 = new Integer[5];//array寫法
+
         
     }
     

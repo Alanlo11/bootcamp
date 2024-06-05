@@ -206,14 +206,14 @@ public class Demostring {
             System.out.println(s14);
 
             String s15 = "abc";
-            s15 = s15.concat("def");//better performance 速度上快好多!!!
+            s15 = s15.concat("def");//better performance 速度上快好多!!! 意思係加上def
             System.out.println(s15);
 
             String s16 = "abc";
             String s17 = "abc";
 
-            System.out.println(s16.compareTo(s17));//0,the value of s14 = the value of s15
-            System.out.println(s16.equals(s17));//chk value
+            System.out.println(s16.compareTo(s17));//0,the value of s16 = the value of s17
+            System.out.println(s16.equals(s17));//chk value 是否一樣
             System.out.println(s16 == s17);//chk object  comparing the string object address
 
             

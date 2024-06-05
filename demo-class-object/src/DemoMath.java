@@ -1,6 +1,6 @@
 public class DemoMath {
   public static void main(String[] args) {
-    //abs()
+    //abs()正數
     int x = -3;
     int y = 8;
     int result = Math.abs(x * y);//int * int =int
@@ -51,7 +51,7 @@ public class DemoMath {
     System.out.println(Math.sqrt(-25));//NaN 不能解決的數
 
 
-    //rendom()
+    //random()
     System.out.println(Math.random());//0.0 and 1.0
     System.out.println(Math.round(Math.random()*100));
 
