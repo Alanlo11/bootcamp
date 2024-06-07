@@ -12,7 +12,7 @@ public class Cat {//Class name  -> name convenrtion -> able to describe physical
 
   //behavior
   //instance method
-  //setAge() is a method that can be called bt object only
+  //setAge() is a method that can be called by OBJECT only
   //For example,Cat c1 = new Cat();
   //c1.setAge(13);
   //"this"-> the object pointed by c1(object reference)指定

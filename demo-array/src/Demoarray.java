@@ -38,6 +38,7 @@ public class Demoarray {
             System.out.println(arr3[i]);
         }
 
+
         int max = Integer.MIN_VALUE;
         for(int i=0 ; i<arr3.length ; i++){
             if (arr3[i]>max ) {
