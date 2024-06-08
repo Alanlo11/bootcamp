@@ -30,7 +30,6 @@ public static void main(String[] args) {
   System.out.println(b1.toString());
   int[] x = b1.getIntegers();
   b1.setIntegers(new int[] {5,6,7});
-
   
   //Bag(integers=[100,-2,6])
   System.out.println(new Bag(new int[] {100,-2,6}).toString());
