@@ -46,7 +46,6 @@ public class Ball {
 
 public static void main(String[] args) {
   Ball b1 = new Ball();//empty constructor to create a ball
-
   Ball b2 = new Ball("RED", 10.2);
   System.out.println(b2.toString());
   //未寫method之前會出呢堆野 "Ball@7344699f"   OBJECT Reference

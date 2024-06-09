@@ -27,6 +27,8 @@ public static void main(String[] args) {
 
   int[] integers = new int[] {3,1,2};
   Bag b1 = new Bag(integers);
+  Bag b2 = new Bag();
+  b1=b2;
   System.out.println(b1.toString());
   int[] x = b1.getIntegers();
   b1.setIntegers(new int[] {5,6,7});
