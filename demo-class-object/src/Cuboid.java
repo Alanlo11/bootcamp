@@ -69,6 +69,7 @@ public class Cuboid {
     System.out.println(c2.getSize());
     System.out.println(c2.getSurfaceArea());
     System.out.println(c2.getVolume());
+    
   }
   
 }

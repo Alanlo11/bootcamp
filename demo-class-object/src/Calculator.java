@@ -52,13 +52,13 @@ public class Calculator {
     for(int i=0 ; i<args.length ; i++){
       System.out.println(args[i]);
     }
-
   }
 
-  public static void test2(String... args){ //String...->String[] same type 完全一樣的
+  public static void test2(String... args){
+    //String...->String[] same type 完全一樣的
     //for-each
     for(String s : args){
-      System.out.println(s);
+      System.out.println("sss="+s);
     }
   }
 
@@ -81,10 +81,23 @@ public class Calculator {
     sum(1.0f,2.0f);
 
     //String.valueOf() -> overloading 入面唔同參數就會自動對應參數類型(如有，冇就會揀最接近)
-
     Calculator.test(new String[] {"abc","ijk"});
     Calculator.test2(new String[] {"abc","ijk"});
     Calculator.test2("abc","ijk");
+
+    //static 
+    //instance mathod
+    Calculator.sum(3, 2);//5
+    Calculator x = new Calculator();
+    x.setX(3);
+    x.setY(2);
+    System.out.println(x.sum());
+
+    System.out.println(x.sum(3, 2));//call static method
+    //object reference is able to cal static method
+
+    //Calculator.sum(); instance method cannot be called by class name
+    //static method can be called by instance (object) of class name
+    //instance can only called by instance (object)
   }
-  
 }

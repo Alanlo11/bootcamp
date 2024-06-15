@@ -21,7 +21,32 @@ public class DemoInteger {
     //System.out.println(i3>=i4);
     //System.out.println(i1>=i2);
 
+    //因為－128 to 127 Float係包埋小數點後既數，中間有好多個數，唔會有晒咁多個數，所以係唔support
+    //Float,Double (No Internal Cache in JVM)
+    Float f1 = 10.12345f;//autobox float value -> Float object
+    Float f2 = 10.12345f;//autobox float value -> Float object
+    System.out.println(f1 == f2);//false (No Internal Cache in JVM)
 
+    Double d1 = 128.12345d;//autobox float value -> Float object
+    Double d2 = 128.12345d;//autobox float value -> Float object
+    System.out.println(d1 == d2);//false (No Internal Cache in JVM)
+
+
+    //Boolean:support Internal cache because only 2 Value
+    Boolean b1 = true;//autobox float value -> Float object
+    Boolean b2 = true;//autobox float value -> Float object
+    System.out.println(b1 == b2);//true
+
+    //Character:Support Internal cache (-128 to 127)
+    Character c1 = 'c';
+    Character c2 = 'c';
+    System.out.println(c1 == c2);//true
+
+    //only -128 to 127 can support Internal cache
+    Character c3 = '你';
+    Character c4 = '你';
+    System.out.println(c3 == c4);//false
+    
   }
   
 }

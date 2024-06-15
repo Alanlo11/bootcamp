@@ -52,6 +52,7 @@ public class Book {
     book1.setAuthor("John");
     book1.setPages(300);
     book1.setTitle("bootcamp");
+    
 
 
 
