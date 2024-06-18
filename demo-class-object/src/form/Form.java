@@ -48,8 +48,5 @@ public class Form {
     f1.setLastName("Lo");
     System.out.println(f1);
 
-
-    
-
   }
 }

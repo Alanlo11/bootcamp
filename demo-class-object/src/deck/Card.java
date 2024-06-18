@@ -19,19 +19,24 @@ public class Card {
   }
 
   public String toString(){
-    return "Card(" + "suit=" + this.suit + " rank=" + this.rank + ")";
+    return "Card(suit=" + this.suit + " rank=" + this.rank + ")";
   }
  
 
   public static void main(String[] args) {
     Deck deck = new Deck();
-    Card[] cards = deck.getCards();
+    deck.getCards();
     
     //deck.shuffle(200);
-    new ShuffleManager(deck.getCards()).shuffle(100);
+    new ShuffleManager(deck.getCards());
+    
 
     for(Card card : deck.getCards()){
       System.out.println(card);
     }
+
+    
+
+
   }
 }

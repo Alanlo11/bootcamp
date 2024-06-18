@@ -48,8 +48,8 @@ public class Order {
 
     //double + double = 出事
     public double total(){
-      BigDecimal amount = BigDecimal.valueOf(0L);
-      //add,subtracy,mutiply,divide method return new Object
+      BigDecimal amount = BigDecimal.valueOf(0.0d);
+      //add,subtract,mutiply,divide method return new Object
       for(int i=0 ; i<this.items.length ; i++){
         amount = amount.add(BigDecimal.valueOf(this.items[i].subtotal()));//return new Biddec,所以左邊一定要有object reference
       }
