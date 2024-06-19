@@ -1,4 +1,4 @@
-public class Person { //abstract 
+public abstract class Person { //abstract 
   private String name;
   private int age;
   
@@ -15,8 +15,13 @@ public class Person { //abstract
     return this.name;
   }
 
+  public void setAge(int age){
+    this.age = age;
+  }
+
   public static void main(String[] args) {
-    Person p = new Person("Alan", 13);
+    //abstract class cannot create object
+    //Person p = new Person("Alan", 13);
 
     //Student.class is public
     //Student.class constructor is public

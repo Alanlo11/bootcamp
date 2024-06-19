@@ -1,6 +1,6 @@
 public class DemoStaticFinal {
 
-   //constant 固定不變既野 //snakecase 
+  //constant 固定不變既野 //snakecase 
   //logoString //camelcase
   private static final String LOGO_STRING ;//static vairables,finalized
   private static String name;//static variable

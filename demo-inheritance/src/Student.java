@@ -1,4 +1,4 @@
-public class Student extends Person{
+public class Student extends Person{//abstract
   //Person.class is perent,while Student is child
   private int studentId;
 
@@ -20,6 +20,10 @@ public class Student extends Person{
     return this.studentId;
   }
 
+  public void setAge(int age){
+    //2.call parent object setAge() method
+    super.setAge(age);
+  }
   //public int getAge(){
   //  return this.age;
   //}

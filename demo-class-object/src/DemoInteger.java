@@ -14,8 +14,8 @@ public class DemoInteger {
 
 
     //Important !!!
-    //For Class,tou should always compare their object value by METHOD!!!!!!
-    System.out.println(i3.compareTo(i4));//0
+    //For Class,you should always compare their object value by METHOD!!!!!!
+    System.out.println("interger"+i3.compareTo(i4));//0
 
     //useless chk object only
     //System.out.println(i3>=i4);
