@@ -23,8 +23,9 @@ public class MiniCircle extends Circle{
     System.out.println(mc.area());
 
     //extra example (BigDecimal vs StringBuilder Design defference)
-    StringBuilder sb = new StringBuilder("hello");
-    sb.append("world");
+    StringBuilder sb = new StringBuilder("hello");//StringBuilder return "this"
+    sb.append("world");//Java:You don;t have to assign the return object to a reference.
     System.out.println(sb);
+
   }
 }

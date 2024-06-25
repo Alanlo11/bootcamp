@@ -23,7 +23,8 @@ public abstract class Shape {
   //chapter 17
   public static double totalArea(Shape[] shapes){
     BigDecimal bd = BigDecimal.valueOf(0.0d);
-    for(Shape s : shapes){//s is a object reference,point to actual object (circle,square)
+    for(Shape s : shapes){
+      //s is a object reference,point to actual object (circle,square)
       bd = bd.add(BigDecimal.valueOf(s.area()));
     }
     return bd.doubleValue();
