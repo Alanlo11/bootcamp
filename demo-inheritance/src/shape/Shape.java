@@ -3,6 +3,7 @@ package shape;
 import java.math.BigDecimal;
 
 public abstract class Shape {
+  //abstract 抽象，不可以被new object
   //abstract class can create instance method whitout implementation
   //method without implementation -> abstract method
   public abstract double area();
@@ -11,18 +12,18 @@ public abstract class Shape {
     return BigDecimal.valueOf(radius).multiply(BigDecimal.valueOf(radius).multiply(BigDecimal.valueOf(Math.PI))).doubleValue();
   }
 
-
   // public static double totalArea(Circle[] circles){
 
   // }
 
   // public static double totalArea(Square[] squares){
-    
+
   // }
 
   //chapter 17
   public static double totalArea(Shape[] shapes){
     BigDecimal bd = BigDecimal.valueOf(0.0d);
+    //左邊係type，s係指針（object reference），右邊係object
     for(Shape s : shapes){
       //s is a object reference,point to actual object (circle,square)
       bd = bd.add(BigDecimal.valueOf(s.area()));

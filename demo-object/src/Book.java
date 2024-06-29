@@ -73,7 +73,7 @@ public class Book {//implicitly inherit Object.class
     //Implication
     //there will be another String value with same hash code.
     //2 different String potentially can be with same hash code.
-    //因為會overflow
+    //因為會overflow,所以有機會會有一樣既hashcode.
     String str2 = "abcdefghijklxy";
     System.out.println(str2.hashCode());
     String str3 = "bbcdefghijklxy";

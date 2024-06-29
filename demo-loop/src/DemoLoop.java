@@ -73,10 +73,12 @@ public class DemoLoop {
          //7
 
          int total = 0;
-         for (int i =0; i<5 ; i++)
-         {if(i>3)
-            {continue;}//when i=4,skip "total +=i",go to "i++"
-            total += i;}
+         for (int i =0; i<5 ; i++){
+         if(i>3){
+            continue;//when i=4,skip "total +=i",go to "i++"
+            }
+            total += i;
+        }
          System.out.println("total="+ total);
 
 
