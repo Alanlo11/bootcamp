@@ -46,6 +46,10 @@ public class Cat {//Class name  -> name convenrtion -> able to describe physical
     return "The age of the cat is " + this.age + ", and name of this cat is " + this.name;
   }
 
+  public boolean isTooOld(){
+    return this.age > 10;
+  }
+
   public static void main(String[] args) {
     //object,using class to creata a object
     Cat cat = new Cat();
@@ -53,5 +57,14 @@ public class Cat {//Class name  -> name convenrtion -> able to describe physical
 
     Cat c3 = new Cat();
     System.out.println(c3.getAge());//0,because primitive defult 0
+
+    if(cat.getAge() > 10){
+      //......
+    }
+
+    if(cat.isTooOld()){
+
+    }
+    
   }
 }

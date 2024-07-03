@@ -4,18 +4,18 @@ public class Deck {
 
   //Player,Deck,Card
   //attribute
-  private static String[] suits = new String[]{"Diamond" , "Club" , "Heart" , "Spade"};
-  private static String[] ranks = new String[]{"A" , "2" , "3" , "4" , "5" , "6" , "7" , "8" , "9" , "10" , "J" , "Q" , "K"};
-  public static int length = suits.length * ranks.length;
+  // public static final String[] suits = new String[]{"Diamond" , "Club" , "Heart" , "Spade"};
+  // public static final String[] ranks = new String[]{"A" , "2" , "3" , "4" , "5" , "6" , "7" , "8" , "9" , "10" , "J" , "Q" , "K"};
+  public static int length = Suit.suitNumber() * Rank.rankNumber();
   //Dependency,attribute
   public Card[] cards;
 
   //construstor
   public Deck(){
-    this.cards = new Card[suits.length * ranks.length];
+    this.cards = new Card[length];
     int idx = 0;
-    for(String suit : suits){
-      for(String rank : ranks){
+    for(Suit suit : Suit.values()){
+      for(Rank rank : Rank.values()){
         this.cards[idx++] = new Card(suit, rank);
       }
     }
