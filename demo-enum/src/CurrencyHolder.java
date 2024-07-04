@@ -1,10 +1,10 @@
 public class CurrencyHolder {
-  private final int DBvalue;
+  private final int DBValue;
   private final String Currency;
 
   public CurrencyHolder(String currency,int DBValue){
     this.Currency = currency;
-    this.DBvalue = DBValue;
+    this.DBValue = DBValue;
   }
 
 public String getCurrency(){
@@ -15,6 +15,10 @@ public String getCurrency(){
     return "HKD".equals(this.Currency);
   }
 
+  public static boolean isHKD(String currency){
+    return "HKD".equals(currency);
+  }
+
   public static boolean isHKD(CurrencyHolder holder){
     return "HKD".equals(holder.getCurrency());
   }
@@ -23,9 +27,9 @@ public String getCurrency(){
   public static boolean isHKD2(Currency currency){
     return "HKD".equals(currency.name());
   }
+  
 
-  public static void main(String[] args) {
-    
+    public static void main(String[] args) {  
     //CANNOT guarantee there is ONLY one HKD Object in memory
     CurrencyHolder ch1 = new CurrencyHolder("HKD",1);
     CurrencyHolder ch2 = new CurrencyHolder("HKD",1);
@@ -44,7 +48,10 @@ public String getCurrency(){
 
     //solution: enum
     //enum.class defined a finite number of values,so that compiler can validate the parameters
-    // System.out.println(isHKD2(Currency.USD));
+    System.out.println(isHKD2(Currency.USD));//false
+    
+    
+    
 
     //valueOf(),String -> ENUM
 

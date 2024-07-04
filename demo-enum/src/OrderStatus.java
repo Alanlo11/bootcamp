@@ -1,3 +1,5 @@
+import java.util.Currency;
+
 public enum OrderStatus {
   ORDERED(0),
   PAID(1),
@@ -23,6 +25,6 @@ public enum OrderStatus {
   }
 
   public static void main(String[] args) {
-    System.out.println(OrderStatus.READY_TO_SHIP.next());
+    System.out.println(OrderStatus.READY_TO_SHIP.next());//DELIVERED
   }
 }

@@ -6,12 +6,12 @@ public enum Currency {
 
   //instance variable
   private final String description;
-  private final int DBvalue;
+  private final int DBValue;
 
   //Constructor
-  private Currency(String description,int DBvalue){
+  private Currency(String description,int DBValue){
     this.description = description;
-    this.DBvalue = DBvalue;
+    this.DBValue = DBValue;
   }
 
   //instance methods
@@ -19,26 +19,29 @@ public enum Currency {
     return this.description;
   }
 
-  public int getDBvalue(){
-    return this.DBvalue;
+  public int getDBValue(){
+    return this.DBValue;
   }
 
   @Override
-  public String toString(){
-    return "Currrncy String is";
+  public String toString() {
+    return "Currency(" //
+        + "description=" + this.description //
+        + "DBValue=" + this.DBValue //
+        + ")";
   }
 
   // HKD,2 ->USD, 3 -> JPY,1
   public static Currency get(int DBValue){
     for(Currency curr : Currency.values()){
-      if(DBValue == curr.getDBvalue())
+      if(DBValue == curr.getDBValue())
       return curr;
     }
     return null;//throw exception
   }
 
   public static int get(Currency currency){
-    return currency.getDBvalue();
+    return currency.getDBValue();
   }
 
   public static String fullDescription(Currency currency){
@@ -60,7 +63,7 @@ public enum Currency {
     case USD:
     return "USD";
     case JPY:
-    return String.valueOf(currency.getDBvalue());
+    return String.valueOf(currency.getDBValue());
     default:
     return null;
   }
@@ -70,6 +73,7 @@ public enum Currency {
     // Currency currency = Weekday.Monday;
     Currency currency = Currency.HKD;
     Currency currency2 = Currency.USD;
+    
     if(currency == Currency.USD){
       System.out.println("it is " + currency.getDescription());
     }else if(currency == Currency.HKD){
@@ -78,8 +82,8 @@ public enum Currency {
       System.out.println("it is " + currency.getDescription());
     }
 
-    System.out.println(currency.getDBvalue());
-    System.out.println(currency2.getDBvalue());
+    System.out.println(currency.getDBValue());
+    System.out.println(currency2.getDBValue());
 
     System.out.println(currency);//HKD
 
@@ -118,7 +122,7 @@ public enum Currency {
 
       }
 
-     System.out.println(Currency.get(2));//toString(),
+     System.out.println(Currency.get(2));//toString(),Currency(desciption=US Dollar.DBvalue=2)
       
       
 
@@ -126,7 +130,7 @@ public enum Currency {
 
      //3. valueOf() -> static method
      System.out.println(Currency.valueOf("HKD").name());//"HKD","HKD"->Currency enum->name()->"HKD"
-     System.out.println(Currency.valueOf("123").name());//java.lang.IllegalArgumentException
+    //  System.out.println(Currency.valueOf("123").name());//java.lang.IllegalArgumentException
 
   }
 }
