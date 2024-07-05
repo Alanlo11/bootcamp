@@ -16,10 +16,6 @@ public enum Rank {
   KING(13),
   ;
 
-  public static int rankNumber(){
-    return Rank.KING.value;
-  }
-  
   private int value;
   
   private Rank(int value){
@@ -35,5 +31,10 @@ public enum Rank {
   //  if(this.value > rank.getValue())
   //  return true;
   //  return false;
+  }
+
+  public static void main(String[] args) {
+    System.out.println(Rank.values().length);
+
   }
 }

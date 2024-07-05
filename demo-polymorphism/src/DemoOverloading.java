@@ -61,6 +61,14 @@ public class DemoOverloading {
     System.out.println("Animal x,Animal y");
   }
 
+  public static Integer sum(Integer x,Integer y){
+    return x+y;
+  }
+
+  public static Long sum(Long x,Integer y){
+    return x+y;
+  }
+
   public static void main(String[] args) {
     //Purpose of Overloading
     //The design of overloading for methods is to let user (method user) easier to use.
@@ -73,7 +81,7 @@ public class DemoOverloading {
     System.out.println(String.valueOf(arr));
 
     //Example 2:
-    System.out.println(sum(1, 2));
+    System.out.println(sum(1, 2));//3
     System.out.println(sum(1.0, 2.0));//3.0
 
     System.out.println(sum((byte)3, (short)9));//12 or 12.0 揀最接近既method，所以會係12
@@ -85,6 +93,8 @@ public class DemoOverloading {
 
     //What if the method parameters are with type of Wrapper Class?
     //Try it out.
+    System.out.println(sum(Integer.valueOf(10), Integer.valueOf(12)));
+    System.out.println(sum(Long.valueOf(1902), Integer.valueOf(100)));
 
   }
 }

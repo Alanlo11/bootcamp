@@ -11,6 +11,10 @@ public class ShuffleManager {
     this.cards = cards;
   }
 
+  public Card[] getCards(){
+    return this.cards;
+  }
+
     public void shuffle(int times){
       if(times >1000)
         times = 1000;

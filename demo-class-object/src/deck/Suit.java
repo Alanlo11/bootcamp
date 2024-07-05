@@ -13,10 +13,6 @@ public enum Suit {
     return this.rank;
   }
 
-  public static int suitNumber(){
-    return Suit.SPADE.rank;
-  }
-
   private Suit(int rank){
     this.rank = rank;
   }

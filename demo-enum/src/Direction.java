@@ -45,5 +45,6 @@ public enum Direction {
       System.out.println(isOppsite(Direction.East,Direction.West));
       System.out.println(Direction.East.oppsite());
       System.out.println(Direction.oppsite(East));
+      
     }
   }

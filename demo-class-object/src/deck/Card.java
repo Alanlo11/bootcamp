@@ -1,7 +1,6 @@
 package deck;
 
 public class Card {
-
   // private String suit;
   // private String rank;
   private Suit suit;
@@ -32,8 +31,8 @@ public class Card {
     if(this.rank.isHigherthan(card.getRank()))
       return true;//exit method.
     if(this.rank == card.getRank() && this.suit.isHigherthan(card.getSuit()))
-    return true;
-    return false;
+      return true;
+      return false;
     // }else if(this.rank.equals(card.getRank().getValue()) && this.suit > card.getSuit()){
     //   return true;
     // }else{
@@ -42,19 +41,9 @@ public class Card {
  
 
   public static void main(String[] args) {
-    Deck deck = new Deck();
-    deck.getCards();
-    
-    //deck.shuffle(200);
-    new ShuffleManager(deck.getCards());
-    
-
-    for(Card card : deck.getCards()){
-      System.out.println(card);
-    }
-
-    
-
+    System.out.println(new Card(Suit.CLUB, Rank.NINE).isHigherthan(new Card(Suit.DIAMOND, Rank.JACK)));
+    System.out.println(new Card(Suit.CLUB, Rank.JACK).isHigherthan(new Card(Suit.DIAMOND, Rank.JACK)));
+    System.out.println(new Card(Suit.CLUB, Rank.NINE).isHigherthan(new Card(Suit.DIAMOND, Rank.KING)));
 
   }
 }

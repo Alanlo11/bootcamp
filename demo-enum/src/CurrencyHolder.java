@@ -1,18 +1,18 @@
 public class CurrencyHolder {
   private final int DBValue;
-  private final String Currency;
+  private final String currency;
 
   public CurrencyHolder(String currency,int DBValue){
-    this.Currency = currency;
+    this.currency = currency;
     this.DBValue = DBValue;
   }
 
 public String getCurrency(){
-  return this.Currency;
+  return this.currency;
 }
   
   public boolean isHKD(){
-    return "HKD".equals(this.Currency);
+    return "HKD".equals(this.currency);
   }
 
   public static boolean isHKD(String currency){
@@ -50,9 +50,6 @@ public String getCurrency(){
     //enum.class defined a finite number of values,so that compiler can validate the parameters
     System.out.println(isHKD2(Currency.USD));//false
     
-    
-    
-
     //valueOf(),String -> ENUM
 
     }

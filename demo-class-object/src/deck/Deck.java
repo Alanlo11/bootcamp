@@ -6,7 +6,7 @@ public class Deck {
   //attribute
   // public static final String[] suits = new String[]{"Diamond" , "Club" , "Heart" , "Spade"};
   // public static final String[] ranks = new String[]{"A" , "2" , "3" , "4" , "5" , "6" , "7" , "8" , "9" , "10" , "J" , "Q" , "K"};
-  public static int length = Suit.suitNumber() * Rank.rankNumber();
+  public static int length = Suit.values().length * Rank.values().length;
   //Dependency,attribute
   public Card[] cards;
 
@@ -28,13 +28,29 @@ public class Deck {
 
         //static method can not use this.
     public static void test(){
-      System.out.println("hello");
       Deck d = new Deck();
       d.getCards();
     }
 
     public Card[] getCards(){
       return this.cards;
+    }
+
+    public void shuffle(int times) {
+      ShuffleManager sm = new ShuffleManager(getCards());
+      sm.shuffle(times);
+      this.cards = sm.getCards();
+    }
+  
+    public static void main(String[] args) {
+      Deck deck = new Deck();
+      deck.shuffle(155);
+      System.out.println("Card[] after shuffle():");
+      for (Card card : deck.getCards()) {
+        System.out.println(card);
+      }
+      
+      
     }
 
   }
