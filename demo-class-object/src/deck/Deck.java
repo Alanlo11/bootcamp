@@ -9,6 +9,7 @@ public class Deck {
   public static int length = Suit.values().length * Rank.values().length;
   //Dependency,attribute
   public Card[] cards;
+  public JokerCard[] jokerCards;
 
   //construstor
   public Deck(){
@@ -36,6 +37,10 @@ public class Deck {
       return this.cards;
     }
 
+    public JokerCard[] getJokerCards(){
+      return this.jokerCards;
+    }
+
     public void shuffle(int times) {
       ShuffleManager sm = new ShuffleManager(getCards());
       sm.shuffle(times);
@@ -43,14 +48,21 @@ public class Deck {
     }
   
     public static void main(String[] args) {
-      Deck deck = new Deck();
-      deck.shuffle(155);
-      System.out.println("Card[] after shuffle():");
-      for (Card card : deck.getCards()) {
-        System.out.println(card);
+      // Deck deck = new Deck();
+      // deck.shuffle(50);
+      // System.out.println("Card[] after shuffle():");
+      // for (Card card : deck.getCards()) {
+      //   System.out.println(card);
+      // }
+      
+      DeckWithJoker jokerdeck = new DeckWithJoker();
+      for(JokerCard jokerCard : jokerdeck.getJokerCards()){
+        System.out.println(jokerCard);
       }
-      
-      
+      // for (Card card : jokerdeck.getCards()) {
+      //   System.out.println(card);
+      // }
+
     }
 
   }

@@ -9,7 +9,7 @@ public class HandManager {
   this.cards = cards;
   }
 
-  public boolean isFullHouse(){
+  public boolean isFullHouse(){//胡蘆
     //calculate this.card
     return false;
   }

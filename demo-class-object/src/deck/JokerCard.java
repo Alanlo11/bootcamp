@@ -3,9 +3,13 @@ package deck;
 public class JokerCard {
   private Joker joker;
 
-  public JokerCard(){
-    this.joker = Joker.Joker;
-    this.joker = Joker.Joker2;
+  public JokerCard(Joker joker){
+    this.joker = joker;
   }
-  
+
+  @Override
+  public String toString(){
+    return "Joker " + this.joker;
+  }
+
 }

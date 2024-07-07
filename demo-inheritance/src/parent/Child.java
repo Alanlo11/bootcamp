@@ -4,7 +4,8 @@ public class Child extends Father{
 private String name;
   //implicitly empty constructor
   public Child(String name){
-    // super(name); //意思係this.name = name; 但用左繼承
+    // super(name);
+    //意思係this.name = name; 但用左繼承
     // super("Father");//by dafault is "Father"
     super(name);
   }
