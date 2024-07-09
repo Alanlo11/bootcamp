@@ -1,6 +1,6 @@
 package deck;
 
-public enum Rank {
+public enum Rank{
   ACE(1),
   TWO(2),
   THREE(3),
@@ -34,7 +34,6 @@ public enum Rank {
   }
 
   public static void main(String[] args) {
-    System.out.println(Rank.values().length);
-
+    System.out.println(Rank.values().length);//13
   }
 }

@@ -5,10 +5,15 @@ public class Card{
   // private String rank;
   private Suit suit;
   private Rank rank;
+  private Joker joker;
 
   public Card(Suit suit,Rank rank){
     this.suit = suit;
     this.rank = rank;
+  }
+
+  public Card(Joker joker){
+    this.joker = joker;
   }
 
   public Suit getSuit(){
@@ -19,9 +24,13 @@ public class Card{
     return this.rank;
   }
 
+  public Joker gerJoker(){
+    return this.joker;
+  }
+
   @Override
   public String toString(){
-    return "Card(suit=" + this.suit + " rank=" + this.rank + ")";
+    return "Card(suit=" + this.suit + " rank=" + this.rank + " Joker=" + this.joker + ")";
   }
 
   //Coding Style: Early Return

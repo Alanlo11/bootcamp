@@ -9,12 +9,12 @@ public enum Suit {
 
   private int rank;
 
-  public int getRank(){
-    return this.rank;
-  }
-
   private Suit(int rank){
     this.rank = rank;
+  }
+
+  public int getRank(){
+    return this.rank;
   }
 
   //most of the instance methods should refer to "this"
@@ -32,12 +32,10 @@ public enum Suit {
   }
 
   public static Suit whichOneHigher(Suit a,Suit b){
-    if(a.rank > b.rank){
+    if(a.rank > b.rank)
       return a;
-    }else{
       return b;
     }
-  }
 
   public static void main(String[] args) {
     System.out.println(Suit.CLUB.isHigherthan(Suit.SPADE));
@@ -50,7 +48,7 @@ public enum Suit {
     //Meaning: comparing their ranking
     //1.not good enough
     if(currentSuit.getRank() > targetSuit.getRank()){
-      
+
     }
 
     //2. this one is better than 1.
