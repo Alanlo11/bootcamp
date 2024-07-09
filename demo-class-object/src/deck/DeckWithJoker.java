@@ -6,8 +6,6 @@ public class DeckWithJoker {
   public Card[] cards;
   public JokerCard[] jokerCards;
 
-  public static int cardlength = Suit.values().length * Rank.values().length;
-  public static int jokerlength = Joker.values().length;
   public static int length = Suit.values().length * Rank.values().length + Joker.values().length;
 
   public DeckWithJoker(){
