@@ -18,6 +18,7 @@ private String name;
   
   public static void main(String[] args) {
     Child c = new Child("alan");
+    System.out.println(c.getName());
     Father f = new Father();
     Father f2 = new Child("John");
     // Child c2 = new Father(); // not allowd,parent object cannot be assigned to child reference type

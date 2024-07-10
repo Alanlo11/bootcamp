@@ -16,6 +16,7 @@ public class Card{
     this.joker = joker;
   }
 
+
   public Suit getSuit(){
     return this.suit;
   }
@@ -47,7 +48,6 @@ public class Card{
     // }else{
     //   return false;
     }
- 
 
   public static void main(String[] args) {
     System.out.println(new Card(Suit.CLUB, Rank.NINE).isHigherthan(new Card(Suit.DIAMOND, Rank.JACK)));

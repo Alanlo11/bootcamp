@@ -1,7 +1,6 @@
 package deck;
 
 public class Deck {
-
   //Player,Deck,Card
   //attribute
   // public static final String[] suits = new String[]{"Diamond" , "Club" , "Heart" , "Spade"};
@@ -20,8 +19,6 @@ public class Deck {
       }
     }
   }
-
-
 
     //for(int i=0 ; i<suits.length ; i++){
       //for(int j=0 ; j<ranks.length ; j++){
@@ -53,5 +50,4 @@ public class Deck {
       deck.shuffle(50);
       
     }
-
   }

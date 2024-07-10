@@ -28,7 +28,10 @@ public class JokerCard {
 
   @Override
   public String toString(){
-    return "Joker is:" + this.joker + " Suit is:" + this.suit + " Rank is:" + this.rank;
+    // return "Joker is:" + this.joker + " Suit is:" + this.suit + " Rank is:" + this.rank;
+    if(this.suit == null)
+    return "Card is:" + this.joker;
+    return "Suit is:" + this.suit + " Rank is:" + this.rank;
   }
 
   public static void main(String[] args) {
