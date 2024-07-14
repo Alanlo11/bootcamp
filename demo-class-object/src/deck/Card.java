@@ -16,7 +16,6 @@ public class Card{
     this.joker = joker;
   }
 
-
   public Suit getSuit(){
     return this.suit;
   }
@@ -47,6 +46,14 @@ public class Card{
     //   return true;
     // }else{
     //   return false;
+    }
+
+    public boolean isHigherthanInB2(Card card){
+      if(this.rank.isHigherthanInB2(card.getRank()))
+      return true;
+      if(this.rank == card.getRank() && this.suit.isHigherthan(card.getSuit()))
+      return true;
+      return false;
     }
 
   public static void main(String[] args) {

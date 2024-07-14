@@ -35,6 +35,47 @@ public class HandManager {
     return false;
   }
 
+  public boolean isFourKind(){//4條
+    int count = 0;
+    for(int i=0 ; i<this.cards.length ; i++){
+      for(int j=0 ; j<this.cards.length ; j++){
+        if(this.cards[i].getRank() == this.cards[j].getRank()){
+        count++;
+      }
+    }
+    if(count == 4)
+    return true;
+  }
+    return false;
+  }
+
+  public boolean isStraight(){//順
+    int count = 0;
+    for(int i=0 ; i<this.cards.length ; i++){
+      for(int j=0 ; j<this.cards.length ; j++){
+        if(this.cards[i].getRank().getValue() +1 == this.cards[j].getRank().getValue()){
+          count++;
+        }
+      }
+      if(count == 4)
+      return true;
+    }
+    return false;
+  }
+
+  public boolean isRoyalFlush(){//同花順
+    int count = 0;
+    for(int i=0 ; i<this.cards.length ; i++){
+      for(int j=0 ; j<this.cards.length ; j++){
+        if(this.cards[i].getRank().getValue() +1 == this.cards[j].getRank().getValue() && this.cards[i].getSuit() == this.cards[j].getSuit()){
+          count++;
+        }
+      }
+      if(count == 4)
+      return true;
+    }
+    return false;
+  }
 
   public static void main(String[] args) {
     Card[] card0 = new Card[5];
@@ -45,5 +86,7 @@ public class HandManager {
     card0[4] = new Card(Suit.CLUB, Rank.EIGHT);
     HandManager hm = new HandManager(card0);
     System.out.println(hm.isFullHouse());
+
+    
   }
 }

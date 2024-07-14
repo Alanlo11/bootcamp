@@ -6,6 +6,8 @@ import deck.Suit;
 import deck.Card;
 
 public class BigTwo {
+
+  private Card[] cards;
   
   public static boolean isFourKind(Card[] cards){//4條
     int count = 0;
@@ -110,6 +112,8 @@ public class BigTwo {
     card2[3] = new Card(Suit.CLUB, Rank.FOUR);
     card2[4] = new Card(Suit.CLUB, Rank.FIVE);
     System.out.println("RoyalFlush is:" + isRoyalFlush(card2));//true
+
+    System.out.println(card2[4].isHigherthanInB2(card2[1]));
 
   }
 }
