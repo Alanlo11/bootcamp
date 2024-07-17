@@ -21,7 +21,7 @@ public class BigTwo {
     return true;
   }
     return false;
-  }
+}
 
   public static boolean isStraight(Card[] cards){//順
     int count = 0;
