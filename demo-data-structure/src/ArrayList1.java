@@ -77,7 +77,7 @@ public class ArrayList1 {
     strings.add("hello");
     strings.add("abc");
     strings.add("world");
-    strings.remove(1);//remove "abc" -> ["hello","world"]
+    strings.remove(1);//index 1 = "abc",so remove "abc" -> ["hello","world"]
     strings.add("hello");//["hello","world","hello"]
     strings.remove("hello");//remove the first "hello" object -> ["world","hello"]
     System.out.println(strings);//world

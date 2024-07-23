@@ -1,7 +1,8 @@
 import java.lang.reflect.Array;
+import java.time.LocalDate;
 import java.util.ArrayList;
 
-public class App {
+public class ArrayListDemo {
     public static void main(String[] args) throws Exception {
     Integer[] integers = new Integer[] {2,10,-4};//autobox
     //for-each
@@ -57,6 +58,37 @@ public class App {
         integers3.removeAll(integers3);
         System.out.println(integers3.isEmpty());//true
 
+        //get(), get by index
+        System.out.println(integers2.get(0));//2
+
+        //Q1.Given String[],remove those string with length > 3
+        String[] stringArray = new String[]{"anc","a","",null,"aaaa"};
+
+        ArrayList<String> result = new ArrayList<>();
+        for(String x : stringArray){
+            if(x!=null && x.length() > 3 )
+                result.add(x);
+        }
+        System.out.println(result);//[aaaa]
+
+        //Q2.Given Person[],retrieve all person object with age > 30 or name start with "J"
+        Customer[] customers = new Customer[]{new Customer(40, "Mary"),new Customer(31, "John"),new Customer(29, "Jason"),new Customer(29, "Cindy")};
+        ArrayList<Customer> customersList = new ArrayList<>();
+        for(Customer c : customers){
+            if(c.getName() != null && c.getAge() > 30 || c.getName().startsWith("J"))
+            customersList.add(c);
+        } 
+        System.out.println(customersList);
+
+        ArrayList<Object> object = new ArrayList<>();
+        object.add("abc");
+        object.add(1);
+        object.add(LocalDate.of(2024, 5, 22));
+        //print
+        //check if  the object equals to xxx...
+        //Compare the difference between ArrayList<Object> and ArrayList<String>
+
+        
 
     }
 }
