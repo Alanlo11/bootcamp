@@ -38,8 +38,16 @@ public class ListDemo {
 
     //Map.class
     Map<String, String> nameMap = new HashMap<>();
-
+    
     //Data Structure of data structure
+    List<HashMap<String, String>>maplist = new ArrayList<>();
+    HashMap<String, String> nameList = new HashMap<>();
+    nameList.put("abc", "John");
+
+    HashMap<String, String> bookList = new HashMap<>();
+    nameList.put("def", "Book A");
+    maplist.add(nameList);
+    maplist.add(bookList);
 
   }
 }

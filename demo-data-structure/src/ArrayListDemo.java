@@ -80,15 +80,30 @@ public class ArrayListDemo {
         } 
         System.out.println(customersList);
 
-        ArrayList<Object> object = new ArrayList<>();
-        object.add("abc");
-        object.add(1);
-        object.add(LocalDate.of(2024, 5, 22));
+        ArrayList<Object> objects = new ArrayList<>();
+        objects.add("abc");
+        objects.add(1);
+        objects.add(LocalDate.of(2024, 5, 22));
+        objects.add(new HKID("A1234567"));
+
+        //Polymorephism Part 2: runtime -> implementation
+        for(Object obj : objects){
+            if (obj.equals(new String("abc"))){//call String object equals(),so it's true
+                System.out.println("hello");
+            } else if (obj.equals(new HKID("A1234567"))){//HKID object equals()
+                System.out.println("hello2");
+            } else if (obj.equals(new Integer(1))){//Integer object equals()
+                System.out.println("hello3");
+            } else if (obj.equals(LocalDate.of(2024, 5, 22))){//LocalDate equals()
+                System.out.println("hello4");
+            }
+        }
+
         //print
         //check if  the object equals to xxx...
         //Compare the difference between ArrayList<Object> and ArrayList<String>
 
-        
+
 
     }
 }
