@@ -120,7 +120,22 @@ public class LinkedListDemo {
     strings4.clear();//clear all the objects inside the ArrayList object
     strings4.add("abc");
     strings4 = null;//remove the ArratList object   指向null -> 所有野都冇晒
-    // strings4.add("def");// run time NPE(null pointer exeption)
+    // strings4.add("def");// run time NPE(null pointer execption)
+
+    List<String> s1 = new ArrayList<>();
+    List<String> s2 = new LinkedList<>();
+
+    s1.add("a");
+    s1.add("b");
+    System.out.println(s1);
+
+    s2.add("a");
+    s2.add("b");
+    System.out.println(s2);
+
+    String s3 = "abc";
+    System.out.println(s3.indexOf("d"));
+    System.out.println();
 
 
   }

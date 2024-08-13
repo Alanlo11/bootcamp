@@ -1,3 +1,5 @@
+import sorting.Customer;
+
 public class XYZ<T, U> {
   private T t;
   private U u;

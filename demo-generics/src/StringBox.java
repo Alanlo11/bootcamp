@@ -19,6 +19,10 @@ public class StringBox {
     return this.value;
   }
 
+  public Integer getInteger(){
+    return this.value;
+  }
+
   public void setValue(String value){
     this.value = value;
   }
@@ -27,6 +31,7 @@ public class StringBox {
     StringBox box = new StringBox("abc");
     System.out.println(box.getValue());// abc
 
-    StringBox box2 = new StringBox(1); 
+    StringBox box2 = new StringBox();
+
   }
 }

@@ -1,5 +1,6 @@
 import java.util.HashMap;
 import java.util.Objects;
+import sorting.Customer;
 
 public class HKID {
   private String value;

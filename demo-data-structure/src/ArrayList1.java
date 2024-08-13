@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class ArrayList1 {
   private Integer[] integers;
@@ -81,6 +82,7 @@ public class ArrayList1 {
     strings.add("hello");//["hello","world","hello"]
     strings.remove("hello");//remove the first "hello" object -> ["world","hello"]
     System.out.println(strings);//world
-  
+    System.out.println(strings.toArray()[0]);
+    
   }
 }

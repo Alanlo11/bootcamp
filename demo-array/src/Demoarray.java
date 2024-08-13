@@ -236,6 +236,11 @@ public class Demoarray {
         arr8[4]=t2;
         str = String.valueOf(arr8);//assign a new String value to varible s
         System.out.println(str);
+
+        int[] sss = new int[] {1,2,3,4,5};
+        for(int a : sss){
+            System.out.println(a);
+        }
     }
 
 }

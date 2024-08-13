@@ -6,9 +6,10 @@
 - Deque 兩邊都入得出得 -> LinkedList
 - Queue -> ArrayDeque
 - Deque -> ArrayDeque
+- Queue -> PriorityQueue
 
 - Map -> HashMap
-- Set - HashSet
+- Set -> HashSet (check duplicated)
 
 List<Customer>
 
