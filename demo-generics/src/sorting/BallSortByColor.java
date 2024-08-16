@@ -3,6 +3,7 @@ package sorting;
 import java.util.Comparator;
 
 public class BallSortByColor implements Comparator<Ball>{
+  
   @Override
   public int compare(Ball b1, Ball b2){
     if(b1.getColor() == Color.RED)

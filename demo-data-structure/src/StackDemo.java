@@ -20,7 +20,7 @@ public class StackDemo {
     ss2.add("hello");
     ss2.add("abc");
     ss2.remove("abc");
-    System.out.println(ss2);
+    System.out.println("ss2=" + ss2);
 
   }
 }

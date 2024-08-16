@@ -5,7 +5,7 @@ import java.util.function.Function;
 
 public class DemoMapLambda {
  public static void main(String[] args) {
-  // Map -> Key Value
+  // Map -> Key, Value
   Map<String, Customer> customerMap = new HashMap<>();
   customerMap.put("C1234", new Customer("John"));
   customerMap.put("C1235", new Customer("Sam"));
@@ -43,7 +43,7 @@ public class DemoMapLambda {
   System.out.println(map.get("Peter"));// 15
   System.out.println(map.get("Sue")); // 3
 
-  
+
 
  }
 }

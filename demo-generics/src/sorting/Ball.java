@@ -1,6 +1,7 @@
 package sorting;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
@@ -82,7 +83,9 @@ public class Ball implements Comparable<Ball>{
 
   // Approach 1
   Collections.sort(balls);// 0(n log n) -> merge sort
-  System.out.println(balls);
+  System.out.println("Collections Sort: " + balls);
+  // [Ball(number=14, color=WHITE), Ball(number=10, color=BLACK),
+  // Ball(number=8, color=RED)]
 
   // List<Bird> birds = new ArrayList<>();
   // Collections.sort(birds); //error, Bird.class did not implements Comparable
@@ -91,14 +94,21 @@ public class Ball implements Comparable<Ball>{
   // Sort by color first, and then sort by Color
   // RED -> WHITE -> BLACK, if same Color, larger number go left
 
+  // Approach 2
+  balls.add(new Ball(1009, Color.RED));
+  balls.add(new Ball(-8, Color.BLACK));
+
     int x = 3;
     Comparator<Ball> formula = null;
     if (x >= 3) {
       formula = new BallSortByColor();
     } else {
       Collections.sort(balls);
-      // formula = new BallSortByNumber;
+      // formula = new BallSortByNumber();
     }
+
+  Collections.sort(balls, formula);
+  System.out.println(balls);
 
   // Approach 2
   Collections.sort(balls, new BallSortByColor());
@@ -106,5 +116,8 @@ public class Ball implements Comparable<Ball>{
 
   Collections.sort(balls,new BallSortByColorNumber());
   System.out.println(balls);
+
+        
+
   }
 }

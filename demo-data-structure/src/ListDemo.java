@@ -15,6 +15,10 @@ public class ListDemo {
     strings.remove("abc");
     System.out.println(strings.size());//1
 
+    String s1 = "abc";
+    s1.contains("b");
+    
+
     //ArrayList.class has all method defined in List.class
     //ArrayList MAY implement more than one interface
     //ArrayList MAY have its own methods,which did not define in interfaces
