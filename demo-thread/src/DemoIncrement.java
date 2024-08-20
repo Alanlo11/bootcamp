@@ -11,6 +11,7 @@ public class DemoIncrement {
   // Solution 1 -> synchronized method
   // instance method
   public synchronized void increment(){
+    // 成個Method封左Thread要等晒咁多支thread先入到黎，所以大部份情況都會慢好多
     // 1000 Lines fo code....s
     // 成個method封晒
     this.x++;
@@ -20,12 +21,19 @@ public class DemoIncrement {
     this.k++;// multi-thread may access variable k for read/write
     // Solution 3 - locked a code block
     synchronized(lock){// locked a code block
+      // lines of code...
     this.x++;
     }
   }
 
+
+
   public static void main(String[] args) {
     DemoIncrement ball = new DemoIncrement();
+
+    int[] a = new int[]{};
+    int[] b = new int[]{};
+    int length = a.length > b.length ? a.length : b.length;
 
     Runnable task = () -> {
 
@@ -98,7 +106,7 @@ public class DemoIncrement {
     
     Runnable task4 = () -> {
       for(int i=0 ; i<1_000_000 ; i++){
-        ball.increment2();// sililar to y++, revise itself. Thread-safe.
+        ball.increment2();// simlilar to y++, revise itself. Thread-safe.
         }
     };
 
