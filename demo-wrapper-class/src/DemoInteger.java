@@ -10,6 +10,7 @@ public class DemoInteger {
         x2 = x2 +3;
         x2 -= 10;
 
+
         //integer is a wrapper class
         //class has method
         short s = (short) x;

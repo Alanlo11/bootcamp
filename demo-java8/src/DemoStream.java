@@ -28,6 +28,9 @@ public class DemoStream {
     .map(s -> s.toUpperCase()) //Stream<String>
     .collect(Collectors.toList()); // List<String> (new object)
 
+    List<Boolean> s123 = strings.stream().map(ss -> ss.equals("john")).collect(Collectors.toList());
+    System.out.println("123" + s123);
+
     System.out.println(strings);// [john, jenny, sam]
     System.out.println(capNames);// [JOHN, JENNY, SAM]
 
